@@ -17,6 +17,7 @@ class ECMConan(ConanFile):
     def build(self):
         cmake = CMake(self)
         sf = os.path.join(self.source_folder,"extra-cmake-modules-%s" % self.version)
+        cmake.definitions["BUILD_TESTING"] = "OFF"
         cmake.configure(source_folder=sf)
         cmake.build()
         cmake.install()
