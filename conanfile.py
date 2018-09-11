@@ -8,7 +8,7 @@ class ECMConan(ConanFile):
     description = "Extra modules and scripts for CMake."
     generators="cmake"
     sha256="edf6f7895c307afae893200c759f8bb4803650f61b39409f3fce6a9efd50746d"
-    requires="Qt/5.11.0@bincrafters/stable"
+    #build_requires="Qt/5.11.0@bincrafters/stable"
 
     def source(self):
         tools.get("https://github.com/KDE/extra-cmake-modules/archive/v%s.tar.gz"
