@@ -7,6 +7,7 @@ class ECMConan(ConanFile):
     url = "https://github.com/weatherhead99/conan-ecm"
     description = "Extra modules and scripts for CMake."
     generators="cmake"
+    settings="os"
     sha256="edf6f7895c307afae893200c759f8bb4803650f61b39409f3fce6a9efd50746d"
     short_paths=True
 
